@@ -1,18 +1,13 @@
 {
-  "name": "X-App-Lite — Text-first Companion",
+  "name": "X-App-Lite",
   "short_name": "X-App-Lite",
-  "description": "Unofficial, text-first companion for X. No API required.",
+  "description": "A lightweight text-focused companion for X.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b111c",
+  "background_color": "#101827",
   "theme_color": "#101827",
   "icons": [
-    {
-      "src": "AppIcon.jpg",
-      "sizes": "any",
-      "type": "image/jpeg",
-      "purpose": "any"
-    }
+    { "src": "AppIcon.jpg", "sizes": "800x800", "type": "image/jpeg", "purpose": "any" }
   ]
 }
