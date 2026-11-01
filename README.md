@@ -1,30 +1,20 @@
-# X-App-Lite (static edition)
+# X-App-Lite v1.2 — GitHub Pages
 
-A free static, text-first **unofficial companion** for X. No X API, no X Developer Portal configuration, no server and no new hosting account (if you already have GitHub).
+Free text-first companion to X, hosted entirely on GitHub Pages. No backend, login integration, API keys or credits are required.
 
-## Features
-- Write text-only drafts (automatically saved locally), hand off to X official post composer
-- Open your X home timeline (on X itself)
-- Search posts and open public profiles (on X itself)
-- Keep a local list of favorite profiles
-- Greek / English and dark / light themes
-- PWA shell (install from supported browsers; app assets can be cached)
+## Functions
+- Greek and English UI (browser language initially; toggle saves choice)
+- Light/dark themes
+- Text post composer with automatic local drafts; **Continue on X** opens the official X composer, where the user must confirm posting
+- Shortcuts to the official X timeline and search
+- Favorite public profile shortcuts stored locally
+- AppIcon used as header icon, favicon and web manifest icon
 
-## Important limitations
-- This **cannot** show an authenticated personal X timeline inside the app without an authorized X integration. On X, images, videos, ads etc. may still appear.
-- It cannot publish automatically, fetch posts or replies, authenticate users or strip media from x.com. The user completes posts at x.com.
-- No OAuth keys or passwords are stored or requested. Posting and search links are created locally.
-- A draft uses a conservative 280-codepoint limit; X's own weighted character rules may differ.
-- X-App-Lite is not affiliated with X Corp.
+**Limitations:** This is *not* an independent timeline or X login client. It does not read posts using the X API or publish directly. The X website may display media, advertisements and other interface elements.
 
-## Publish to GitHub Pages
-1. Create a new public repository (e.g. `x-app-lite`) on GitHub.
-2. Upload **all files in this folder** to the repository root (not the ZIP itself).
-3. Open Settings → Pages → Build and deployment → Deploy from a branch → `main`, folder `/(root)` → Save.
-4. When deployed, open `https://YOUR-USERNAME.github.io/x-app-lite/`. If the repo is `ckmyapps/x-app-lite`, the expected URL is `https://ckmyapps.github.io/x-app-lite/` (only after you create/publish it).
+## Deploy
+Upload the **contents** of this folder to the root of your `CKMyApps/X-App-Lite` GitHub repository (keep `index.html` in the root), commit the changes, then ensure `Settings → Pages → Deploy from a branch → main → /(root)` is enabled. The URL is `https://ckmyapps.github.io/X-App-Lite/`. Do not set a custom domain.
 
-## Run locally
-Open `index.html` for most features or run `python3 -m http.server 8080` and visit `http://localhost:8080`.
+Never upload your local `.env`, secrets, or Node.js OAuth code to GitHub Pages.
 
-## Security
-Do not upload X Developer Portal secrets, access tokens or `.env` files to GitHub Pages. If credentials have previously appeared in screenshots, rotate them in Developer Console.
+MIT license applies to original project code, not third-party brands or assets. The project is not affiliated with X Corp.
